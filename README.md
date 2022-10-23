@@ -21,7 +21,23 @@ pip install requirements.txt
 
 * Make sure to create `train, dev, test' csv files with column names "text" and "summary"
 
+### Models:
 
+##Hindi and Gujarati
+* IndicBART
+* mT5
+* MBart
+* MBart + Adapters
+
+##English
+* PEGASUS
+* T5
+* BART
+* BRIO
+* ProphetNet
+
+
+##English
 ### Run the script
 
 To fine-tune any huggingface model you can use the `run.sh` script. When running the different models described in the paper, ensure you pass the appropriate arguments.
