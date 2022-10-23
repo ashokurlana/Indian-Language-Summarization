@@ -1,0 +1,25 @@
+python run_summarization.py \
+    --model_name_or_path facebook/bart-large-cnn \
+    --do_train \
+    --do_eval \
+    --dO_predict \
+    --lang english \
+    --train_file train.csv \
+    --validation_file dev.csv \
+    --test_file test.csv \
+    --max_source_length 1024 \
+    --max_target_length 150 \
+    --val_max_target_length 150 \
+    --source_prefix "summarize: " \
+    --output_dir tmp/outputs/ \
+    --per_device_train_batch_size=1 \
+    --per_device_eval_batch_size=1 \
+    --dataloader_num_workers 4 \
+    --logging_strategy "epoch" \
+    --save_strategy "no" \
+    --fp16 True \
+    --overwrite_output_dir \
+    --predict_with_generate \
+    --num_train_epochs 1 \
+    --summary_column summary \
+    --text_column text $@
