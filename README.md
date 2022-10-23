@@ -23,12 +23,12 @@ pip install requirements.txt
 
 ### Models:
 For Hindi and Gujarati
-```
+
 * [IndicBART](https://huggingface.co/ai4bharat/IndicBART)
 * [mT5](https://huggingface.co/google/mt5-base)
 * [MBart](https://huggingface.co/facebook/mbart-large-50)
 * [MBart + Adapters](https://docs.adapterhub.ml/classes/models/mbart.html)
-```
+
 ```
 For English
 * PEGASUS
