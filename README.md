@@ -22,22 +22,22 @@ pip install requirements.txt
 * Make sure to create `train, dev, test' csv files with column names "text" and "summary"
 
 ### Models:
-
-##Hindi and Gujarati
-* IndicBART
-* mT5
-* MBart
-* MBart + Adapters
-
-##English
+For Hindi and Gujarati
+```
+* [IndicBART](https://huggingface.co/ai4bharat/IndicBART)
+* [mT5](https://huggingface.co/google/mt5-base)
+* [MBart](https://huggingface.co/facebook/mbart-large-50)
+* [MBart + Adapters](https://docs.adapterhub.ml/classes/models/mbart.html)
+```
+```
+For English
 * PEGASUS
 * T5
 * BART
 * BRIO
 * ProphetNet
+```
 
-
-##English
 ### Run the script
 
 To fine-tune any huggingface model you can use the `run.sh` script. When running the different models described in the paper, ensure you pass the appropriate arguments.
