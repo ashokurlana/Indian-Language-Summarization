@@ -44,4 +44,15 @@ To fine-tune any huggingface model you can use the `run.sh` script. When running
 ```sh
 sh run.sh
 ```
+### Reference
+If you use our code or corpus, please kindly cite:
+
+```
+@article{urlana2023indian,
+  title={Indian language summarization using pretrained sequence-to-sequence models},
+  author={Urlana, Ashok and Bhatt, Sahil Manoj and Surange, Nirmal and Shrivastava, Manish},
+  journal={arXiv preprint arXiv:2303.14461},
+  year={2023}
+}
+```
 
